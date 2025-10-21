@@ -1,0 +1,131 @@
+:root {
+  --navy: #0b2545;
+  --accent: #2b6be6;
+  --muted: #6b7785;
+  --bg: #ffffff;
+  --radius: 14px;
+  --container: 1200px;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: #0f1724;
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+.brand {
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 2px;
+  padding: 2px;
+  
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav a:hover { color: var(--navy); }
+
+/* Hero */
+.hero {
+  padding: 60px 0;
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 30px;
+  align-items: center;
+}
+.hero h1 { color: var(--navy); font-size: 36px; margin: 0 0 12px; }
+.hero p { color: var(--muted); }
+.hero-media img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(11,37,69,0.08);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+.btn.primary {
+  background: var(--navy);
+  color: #fff;
+}
+.btn.ghost {
+  border: 1px solid rgba(11,37,69,0.08);
+  color: var(--navy);
+}
+
+/* Features */
+.features {
+  padding: 40px 0;
+}
+.feature-grid {
+  display: flex;
+  gap: 20px;
+}
+.feature {
+  background: rgba(43,107,230,0.05);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  padding: 40px 0;
+}
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.masonry img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background: #fafbfd;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid rgba(11,37,69,0.1);
+}
+.footer-nav a {
+  margin: 0 10px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  color: var(--navy);
+}
